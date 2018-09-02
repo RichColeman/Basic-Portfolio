@@ -1,9 +1,11 @@
 body {
   margin: 0 auto;
   width: 100%;
-  background-image: url(/assets/images/qbkls.png);
+  background-image: url(../images/qbkls.png);
   font-family: Arial, Helvetica, sans-serif;
-  color: #444;
+  color: #777777;
+  font-size: 16px;
+  overflow: visible;
 }
 
 h1,h2 {
@@ -19,7 +21,7 @@ h1,h2 {
 /* nav bar style */
 
 header {
-  border-bottom: solid 2.5px lightgrey;
+  border-bottom: solid 2.5px #cccccc;
   background: #ffffff;
   height: 75px;
   min-width: 960px;
@@ -55,7 +57,7 @@ nav li {
   display: inline-block;
   margin: 0 auto;
   padding: 30px 10px;
-  position: relative;
+  /* position: relative; */
   text-decoration: none;
 }
 
@@ -84,7 +86,7 @@ nav a:hover {
   background-color: white;
   padding: 40px;
   box-shadow: 1px 5px 8px lightgrey;
-  border: solid 0.5px lightgray;
+  border: solid 0.5px #dddddd;
 }
 
 #main-pic {
@@ -110,6 +112,86 @@ p {
   line-height: 2;
 }
 
+/* email form style
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4aaaa5;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Add a background color and some padding around the form */
+.email {
+  border-radius: 5px;
+  padding: 20px;
+
+}
+
+/* Portfolio style */
+
+.portfoliocontainer {
+  width: 960px;
+  max-width: 960px;
+  margin: 70px auto;
+  background-color: white;
+  padding: 40px;
+  box-shadow: 1px 5px 8px lightgrey;
+  border: solid 0.5px lightgray;
+
+}
+
+.portfoliohead {
+  color: #4aaaa5;
+}
+
+.content-wrapper {
+  display: inline-block;
+  padding: 20px 2px;
+}
+
+.text-wrapper, .rpg-text, .trivia-text, .rutgers-text, .rps-text {
+  position: relative;
+  margin-top: -100px;
+  left: 20px;
+}
+
+.text-wrapper, .rpg-text, .trivia-text, .rutgers-text, .rps-text  p{
+  text-align: center;
+  width: 300px;
+}
+
+
+.portfoliocontainer p {
+  background-color: #4aaaa5;
+  color: white;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+
+.portfoliocontainer a {
+  text-decoration: none;
+  width: 300px;
+  height: 250px;
+}
+
 /* footer style  */
 
 footer {
@@ -118,8 +200,10 @@ footer {
   height: 60px;
   text-align: center;
   font-size: 12px;
-  padding: 5px;
+  padding: 5px 0px -100px 0px;
   color: #fff;
-  background: #444;
+  background: #666666;
   border-top: solid 10px #4aaaa5;
+  position: fixed;
+  bottom: 0;
 }
