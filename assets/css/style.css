@@ -137,6 +137,12 @@ input[type=submit] {
   font-size: 16px;
 }
 
+input[type=submit]:hover {
+  background: rgba(0,0,0,0);
+	color: #3a7999;
+	box-shadow: inset 0 0 0 3px #4aaaa5;
+  }
+
 /* Add a background color and some padding around the form */
 .email {
   border-radius: 5px;
@@ -164,6 +170,11 @@ input[type=submit] {
 .content-wrapper {
   display: inline-block;
   padding: 20px 2px;
+}
+
+.content-wrapper:hover img{
+  opacity: 0.3;
+  transition: 250ms;
 }
 
 .text-wrapper, .rpg-text, .trivia-text, .rutgers-text, .rps-text {
